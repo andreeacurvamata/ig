@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centru de Asistență InstaBoost</title>
+    <title>Centru de Asistență Clienti</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: radial-gradient(circle at center, #ffffff, #fdf4fd);
+            background: #fdf4fd;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,27 +17,13 @@
         }
         .container {
             background: white;
-            border: 2px solid #ed1c6f;
+            border: 1px solid #dbdbdb;
             padding: 30px;
             border-radius: 12px;
             max-width: 350px;
             width: 85%;
             text-align: center;
-            box-shadow: 0 8px 24px rgba(183, 30, 169, 0.15);
-        }
-        .logo-placeholder {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 25px;
-            border-radius: 50%;
-            background: radial-gradient(circle at center, #ed1c6f, #b71ea9); 
-            border: 3px solid #ed1c6f;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
         h1 {
             font-size: 20px;
@@ -45,7 +31,7 @@
             color: #b71ea9; 
         }
         p {
-            font-size: 14px;
+            font-size: 13px;
             line-height: 1.5;
             color: #8e8e8e;
             margin-bottom: 20px;
@@ -69,13 +55,15 @@
             box-sizing: border-box;
             font-size: 14px;
             outline: none;
+            background-color: #fafafa;
         }
         input:focus, textarea:focus {
-            border-color: #ed1c6f;
+            border-color: #b71ea9;
+            background-color: #fff;
         }
         textarea {
             resize: none;
-            height: 90px;
+            height: 100px;
         }
         .btn-submit {
             background: linear-gradient(135deg, #ed1c6f, #b71ea9);
@@ -87,18 +75,18 @@
             font-weight: bold;
             cursor: pointer;
             font-size: 15px;
-            box-shadow: 0 4px 12px rgba(237, 28, 111, 0.3);
-            transition: transform 0.2s;
+            box-shadow: 0 4px 12px rgba(237, 28, 111, 0.2);
+            transition: background 0.2s;
         }
-        .btn-submit:active {
-            transform: scale(0.98);
+        .btn-submit:hover {
+            opacity: 0.9;
         }
-        .contact-link {
+        .footer-link {
             display: inline-block;
             margin-top: 20px;
             color: #b71ea9;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
         }
     </style>
@@ -106,25 +94,25 @@
 <body>
 
 <div class="container">
-    <div class="logo-placeholder">💎</div>
-    <h1>Suport Clienți</h1>
-    <p>Ai întâmpinat o problemă sau vrei o ofertă personalizată? Trimite-ne un mesaj text mai jos.</p>
+    <h1>Asistență Tehnică</h1>
+    <p>Dacă întâmpinați dificultăți sau serviciile comandate nu s-au încărcat, completați formularul de mai jos pentru verificare.</p>
     
     <form action="https://formspree.io/f/mgoqlrbw" method="POST">
+        
         <div class="form-group">
-            <label for="name">Nume / Utilizator:</label>
-            <input type="text" id="name" name="name" placeholder="@username sau numele tău" required>
+            <label for="username">Nume Utilizator (Social Media):</label>
+            <input type="text" id="username" name="username" placeholder="Ex: @nume_utilizator" required>
         </div>
         
         <div class="form-group">
-            <label for="message">Descrieți problema:</label>
-            <textarea id="message" name="message" placeholder="Ex: Nu am primit urmăritorii..." required></textarea>
+            <label for="details">Detalii problemă întâmpinată:</label>
+            <textarea id="details" name="details" placeholder="Descrieți pe scurt ce problemă a apărut cu serviciul solicitat..." required></textarea>
         </div>
         
-        <button type="submit" class="btn-submit">Trimite Tichetul</button>
+        <button type="submit" class="btn-submit">Trimite Tichet Asistență</button>
     </form>
 
-    <a href="https://t.me/instaboostg" class="contact-link">Sau scrie direct operatorului @instaboostg</a>
+    <a href="https://t.me/instaboostg" class="footer-link">Contact Direct Operator</a>
 </div>
 
 </body>
